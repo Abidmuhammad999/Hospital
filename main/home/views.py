@@ -42,7 +42,7 @@ def contact(request):
       form=ContactForm(request.POST)
       if form.is_valid():
          form.save()
-         return render(request, 'confirm.html')
+         return render(request, 'confirm.html', {'delay_seconds': 5})
    form = ContactForm()
    c_forms={
       'form':form

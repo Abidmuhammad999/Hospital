@@ -5,10 +5,14 @@
   Contact
 {% endblock %}
 {% block content %}
-  <h2>Contact Now</h2>
-  <form action="" method="POST">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <input type="submit" value="Submit" />
-  </form>
+  <hr class="p-1 bg-primary bg-gradient" />
+  <h2 class="text-center">Contact Now</h2>
+  <hr class="p-1 bg-primary bg-gradient" />
+  <div class="container p-5 w-50 bg-light bg-gradient border border-danger">
+    <form action="" method="POST">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <input class="btn btn-success" type="submit" value="Submit" />
+    </form>
+  </div>
 {% endblock %}

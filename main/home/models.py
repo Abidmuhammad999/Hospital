@@ -37,7 +37,7 @@ class Booking(models.Model):
 class Contact(models.Model):
     c_name = models.CharField(max_length=100)
     c_email = models.EmailField()
-    c_description = models.TextField()
+    c_description = models.TextField(max_length=200)
     
     def __str__(self):
         return self.c_name

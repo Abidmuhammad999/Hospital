@@ -5,12 +5,13 @@
     Booking
 {% endblock %}
 
+
 {% block content %}
+<hr class="p-1 bg-primary bg-gradient" /> 
+<h2 class="text-center">Make an Appointment</h2>
+<hr class="p-1 bg-primary bg-gradient" />
     
 
-    <hr class="p-1 bg-primary bg-gradient" />
-    <h2 class="text-center">Make an Appointment</h2>
-    <hr class="p-1 bg-primary bg-gradient" />
     <div class="container w-50 bg-secondary h-100 text-center p-3">
         <form method="POST">
             {% csrf_token %}

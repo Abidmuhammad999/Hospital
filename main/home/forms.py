@@ -33,6 +33,6 @@ class ContactForm(forms.ModelForm):
         labels = {
 
             'c_name': "Your Name",
-            'c_email': 'Patient Email',
+            'c_email': 'Your Email',
             'c_description': 'Tell somthing',
         }
